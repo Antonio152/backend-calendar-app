@@ -17,9 +17,9 @@ router.post(
   "/new",
   [
     // ! Middlewares
-    check("name", "Name is required").not().isEmpty(),
-    check("email", "Email is required").isEmail(),
-    check("password", "Password is required").isLength({ min: 6 }),
+    check("name", "El nombre es requerido").not().isEmpty(),
+    check("email", "El email es requerido").isEmail(),
+    check("password", "La contraseña es requerida").isLength({ min: 6 }),
     validatefields
   ],
   createUser
@@ -27,8 +27,8 @@ router.post(
 
 // * This route is for login
 router.post("/",[
-    check("email", "Email is required").isEmail(),
-    check("password", "Password is required").isLength({ min: 6 }),
+    check("email", "El email es requerido").isEmail(),
+    check("password", "La contraseña es requerida").isLength({ min: 6 }),
     validatefields
 ] ,loginUser);
 

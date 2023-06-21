@@ -130,7 +130,7 @@ body: {
    "uid":"123",
 }
 ```
-| Delete parking by id
+| Delete event by id
 ```
 Route: /api/events/:id
 Type: DELETE
